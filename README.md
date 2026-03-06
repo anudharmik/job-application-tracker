@@ -6,7 +6,7 @@ The app allows users to manage job applications with authentication, secure mult
 ---
 
 ## Live Demo
-https://your-vercel-link.vercel.app
+https://job-application-tracker-nvrj3tkx9-anudharmiks-projects.vercel.app/
 
 ---
 
