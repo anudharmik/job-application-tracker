@@ -34,14 +34,18 @@ export default function ApplicationForm({
       style={{display:"block",marginTop:"10px",width:"100px"}}
       />
 
+      <label style={{display:"block",marginTop:"10px"}}>
+        Application Deadline:
+      </label>
       <input
         type="date"
         value={deadline}
         onChange={(e) => onDeadlineChange(e.target.value)}
+        min={new Date().toISOString().split("T")[0]}
         style={{display :"block",marginTop:"10px"}}
       />
 
-     <button type="submit" style={{ marginLeft: "10px" }}>
+     <button type="submit" style={{ marginLeft: "10px" ,marginTop:"10px"}}>
         Add
       </button>
     </form>
