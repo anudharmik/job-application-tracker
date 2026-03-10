@@ -148,10 +148,10 @@ export default function App() {
         email,
         password
       });
-      if(error){
-        alert(error.message);
+      if(!error){
+        alert("Signup successful! Check your mail");
       }else{
-        alert("Signup successuful! Check your mail");
+        alert(error.message);
       } 
     } 
 
@@ -161,7 +161,9 @@ export default function App() {
         email,
         password
       });
-      if(error){
+      if(!error){
+        alert("Login successful");
+      }else{
         alert(error.message);
       }
     }
